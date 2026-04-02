@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\vahnu\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\\u041F\u043E\u043B\u0456\u0442\u0435\u0445\\Visual KPZ\\lab3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4973BEE2-9AAB-43C4-B54D-0C6520EC2840}|task6\\task6.csproj|c:\\users\\vahnu\\onedrive\\\u0440\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\\u043F\u043E\u043B\u0456\u0442\u0435\u0445\\visual kpz\\lab3\\task6\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4973BEE2-9AAB-43C4-B54D-0C6520EC2840}|task6\\task6.csproj|solutionrelative:task6\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{18DD6507-1EE7-4D51-AF90-ECF1160BA924}|task5\\task5.csproj|c:\\users\\vahnu\\onedrive\\\u0440\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\\u043F\u043E\u043B\u0456\u0442\u0435\u0445\\visual kpz\\lab3\\task5\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{18DD6507-1EE7-4D51-AF90-ECF1160BA924}|task5\\task5.csproj|solutionrelative:task5\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DF7A01D6-601F-4BEA-AEBD-BAD63BB515F8}|task4\\task4.csproj|c:\\users\\vahnu\\onedrive\\\u0440\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\\u043F\u043E\u043B\u0456\u0442\u0435\u0445\\visual kpz\\lab3\\task4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DF7A01D6-601F-4BEA-AEBD-BAD63BB515F8}|task4\\task4.csproj|solutionrelative:task4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18DD6507-1EE7-4D51-AF90-ECF1160BA924}|task5\\task5.csproj|c:\\users\\vahnu\\onedrive\\\u0440\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\\u043F\u043E\u043B\u0456\u0442\u0435\u0445\\visual kpz\\lab3\\task5\\task5.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{18DD6507-1EE7-4D51-AF90-ECF1160BA924}|task5\\task5.csproj|solutionrelative:task5\\task5.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{73449144-2BD3-4504-B54A-870190CE92EA}|task1\\task1.csproj|c:\\users\\vahnu\\onedrive\\\u0440\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\\u043F\u043E\u043B\u0456\u0442\u0435\u0445\\visual kpz\\lab3\\task1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{73449144-2BD3-4504-B54A-870190CE92EA}|task1\\task1.csproj|solutionrelative:task1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4973BEE2-9AAB-43C4-B54D-0C6520EC2840}|task6\\task6.csproj|c:\\users\\vahnu\\onedrive\\\u0440\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\\u043F\u043E\u043B\u0456\u0442\u0435\u0445\\visual kpz\\lab3\\task6\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4973BEE2-9AAB-43C4-B54D-0C6520EC2840}|task6\\task6.csproj|solutionrelative:task6\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{51F7EF74-8774-4844-AFCF-BFFEB3CBD294}|task3\\task3.csproj|c:\\users\\vahnu\\onedrive\\\u0440\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\\u043F\u043E\u043B\u0456\u0442\u0435\u0445\\visual kpz\\lab3\\task3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,8 +31,8 @@
       "RelativeMoniker": "D:0:0:{93F472BF-6188-45D2-9BA9-8EA3328CD2F7}|task2\\task2.csproj|solutionrelative:task2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{73449144-2BD3-4504-B54A-870190CE92EA}|task1\\task1.csproj|c:\\users\\vahnu\\onedrive\\\u0440\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\\u043F\u043E\u043B\u0456\u0442\u0435\u0445\\visual kpz\\lab3\\task1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{73449144-2BD3-4504-B54A-870190CE92EA}|task1\\task1.csproj|solutionrelative:task1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{93F472BF-6188-45D2-9BA9-8EA3328CD2F7}|task2\\task2.csproj|c:\\users\\vahnu\\onedrive\\\u0440\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\\u043F\u043E\u043B\u0456\u0442\u0435\u0445\\visual kpz\\lab3\\task2\\task2.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{93F472BF-6188-45D2-9BA9-8EA3328CD2F7}|task2\\task2.csproj|solutionrelative:task2\\task2.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,11 +42,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "task5",
+              "DocumentMoniker": "C:\\Users\\vahnu\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\\u041F\u043E\u043B\u0456\u0442\u0435\u0445\\Visual KPZ\\lab3\\task5\\task5.csproj",
+              "RelativeDocumentMoniker": "task5\\task5.csproj",
+              "ToolTip": "C:\\Users\\vahnu\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\\u041F\u043E\u043B\u0456\u0442\u0435\u0445\\Visual KPZ\\lab3\\task5\\task5.csproj",
+              "RelativeToolTip": "task5\\task5.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-02T09:20:34.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "task2.csproj",
+              "DocumentMoniker": "C:\\Users\\vahnu\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\\u041F\u043E\u043B\u0456\u0442\u0435\u0445\\Visual KPZ\\lab3\\task2\\task2.csproj",
+              "RelativeDocumentMoniker": "task2\\task2.csproj",
+              "ToolTip": "C:\\Users\\vahnu\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\\u041F\u043E\u043B\u0456\u0442\u0435\u0445\\Visual KPZ\\lab3\\task2\\task2.csproj",
+              "RelativeToolTip": "task2\\task2.csproj",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-19T10:37:30.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\vahnu\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\\u041F\u043E\u043B\u0456\u0442\u0435\u0445\\Visual KPZ\\lab3\\task6\\Program.cs",
               "RelativeDocumentMoniker": "task6\\Program.cs",
@@ -46,51 +80,49 @@
               "RelativeToolTip": "task6\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAFQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-19T10:12:05.272Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-19T10:12:05.272Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\vahnu\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\\u041F\u043E\u043B\u0456\u0442\u0435\u0445\\Visual KPZ\\lab3\\task5\\Program.cs",
               "RelativeDocumentMoniker": "task5\\Program.cs",
               "ToolTip": "C:\\Users\\vahnu\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\\u041F\u043E\u043B\u0456\u0442\u0435\u0445\\Visual KPZ\\lab3\\task5\\Program.cs",
               "RelativeToolTip": "task5\\Program.cs",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAuwG0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJQAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-19T10:06:39.943Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\vahnu\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\\u041F\u043E\u043B\u0456\u0442\u0435\u0445\\Visual KPZ\\lab3\\task4\\Program.cs",
               "RelativeDocumentMoniker": "task4\\Program.cs",
               "ToolTip": "C:\\Users\\vahnu\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\\u041F\u043E\u043B\u0456\u0442\u0435\u0445\\Visual KPZ\\lab3\\task4\\Program.cs",
               "RelativeToolTip": "task4\\Program.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAhwA0AAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF8AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-19T09:58:36.07Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\vahnu\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\\u041F\u043E\u043B\u0456\u0442\u0435\u0445\\Visual KPZ\\lab3\\task3\\Program.cs",
               "RelativeDocumentMoniker": "task3\\Program.cs",
               "ToolTip": "C:\\Users\\vahnu\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\\u041F\u043E\u043B\u0456\u0442\u0435\u0445\\Visual KPZ\\lab3\\task3\\Program.cs",
               "RelativeToolTip": "task3\\Program.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAswCcAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-19T09:56:04.427Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-19T09:56:04.427Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\vahnu\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\\u041F\u043E\u043B\u0456\u0442\u0435\u0445\\Visual KPZ\\lab3\\task2\\Program.cs",
               "RelativeDocumentMoniker": "task2\\Program.cs",
@@ -98,18 +130,17 @@
               "RelativeToolTip": "task2\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-19T09:53:54.129Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-19T09:53:54.129Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\vahnu\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\\u041F\u043E\u043B\u0456\u0442\u0435\u0445\\Visual KPZ\\lab3\\task1\\Program.cs",
               "RelativeDocumentMoniker": "task1\\Program.cs",
               "ToolTip": "C:\\Users\\vahnu\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\\u041F\u043E\u043B\u0456\u0442\u0435\u0445\\Visual KPZ\\lab3\\task1\\Program.cs",
               "RelativeToolTip": "task1\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-19T09:49:35.637Z",
               "EditorCaption": ""
