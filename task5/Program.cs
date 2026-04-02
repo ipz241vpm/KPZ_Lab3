@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
+
 abstract class LightNode
 {
     public abstract string OuterHTML();
@@ -37,7 +38,28 @@ class LightElementNode : LightNode
 
     private List<string> classes = new List<string>();
     private List<LightNode> children = new List<LightNode>();
+    private Dictionary<string, List<Action>> eventListeners = new Dictionary<string, List<Action>>();
+    public void AddEventListener(string eventType, Action listener)
+    {
+        if (!eventListeners.ContainsKey(eventType))
+        {
+            eventListeners[eventType] = new List<Action>();
+        }
 
+        eventListeners[eventType].Add(listener);
+    }
+    public void TriggerEvent(string eventType)
+    {
+        Console.WriteLine($"[EVENT] {tagName} -> {eventType}");
+
+        if (eventListeners.ContainsKey(eventType))
+        {
+            foreach (var listener in eventListeners[eventType])
+            {
+                listener();
+            }
+        }
+    }
     public LightElementNode(string tagName, bool isBlock, bool isSelfClosing)
     {
         this.tagName = tagName;
@@ -114,5 +136,19 @@ class Program
         Console.WriteLine(ul.InnerHTML());
 
         Console.WriteLine("\nChildren count: " + ul.ChildrenCount());
+        Console.WriteLine("\n=== EVENTS ===");
+        // підписка
+        li1.AddEventListener("click", () =>
+        {
+            Console.WriteLine("Item 1 clicked!");
+        });
+
+        li2.AddEventListener("mouseover", () =>
+        {
+            Console.WriteLine("Item 2 hovered!");
+        });
+        // виклик
+        li1.TriggerEvent("click");
+        li2.TriggerEvent("mouseover");
     }
 }
