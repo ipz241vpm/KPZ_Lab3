@@ -50,11 +50,15 @@ class LightElementNode : LightNode
 
     private List<string> classes = new List<string>();
     private List<LightNode> children = new List<LightNode>();
-
+    public List<LightNode> GetChildren()
+    {
+        return children;
+    }
     public LightElementNode(string tagName, bool isSelfClosing)
     {
         this.tagName = tagName;
         this.isSelfClosing = isSelfClosing;
+
     }
 
     // TEMPLATE METHOD hooks (реалізація)
@@ -116,6 +120,46 @@ class LightElementNode : LightNode
     }
 }
 
+
+//Iterator
+
+interface ILightIterator
+{
+    bool HasNext();
+    LightNode Next();
+}
+class DepthFirstIterator : ILightIterator
+{
+    private Stack<LightNode> stack = new Stack<LightNode>();
+
+    public DepthFirstIterator(LightNode root)
+    {
+        stack.Push(root);
+    }
+
+    public bool HasNext()
+    {
+        return stack.Count > 0;
+    }
+
+    public LightNode Next()
+    {
+        var current = stack.Pop();
+
+        if (current is LightElementNode element)
+        {
+            var children = element.GetChildren();
+
+            for (int i = children.Count - 1; i >= 0; i--)
+            {
+                stack.Push(children[i]);
+            }
+        }
+
+        return current;
+    }
+}
+
 // MAIN
 
 class Program
@@ -140,5 +184,16 @@ class Program
 
         Console.WriteLine("\n=== HTML ===");
         Console.WriteLine(ul.OuterHTML());
+
+
+        Console.WriteLine("\n=== ITERATOR DFS ===");
+
+        var iterator = new DepthFirstIterator(ul);
+
+        while (iterator.HasNext())
+        {
+            var node = iterator.Next();
+            Console.WriteLine(node.OuterHTML());
+        }
     }
 }
