@@ -47,15 +47,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "task5",
+              "Title": "task5.csproj",
               "DocumentMoniker": "C:\\Users\\vahnu\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\\u041F\u043E\u043B\u0456\u0442\u0435\u0445\\Visual KPZ\\lab3\\task5\\task5.csproj",
               "RelativeDocumentMoniker": "task5\\task5.csproj",
               "ToolTip": "C:\\Users\\vahnu\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\\u041F\u043E\u043B\u0456\u0442\u0435\u0445\\Visual KPZ\\lab3\\task5\\task5.csproj",
               "RelativeToolTip": "task5\\task5.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-04-02T09:20:34.423Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-02T09:20:34.423Z"
             },
             {
               "$type": "Document",
@@ -67,8 +66,7 @@
               "RelativeToolTip": "task2\\task2.csproj",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-03-19T10:37:30.246Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-19T10:37:30.246Z"
             },
             {
               "$type": "Document",
@@ -90,7 +88,7 @@
               "RelativeDocumentMoniker": "task5\\Program.cs",
               "ToolTip": "C:\\Users\\vahnu\\OneDrive\\\u0420\u043E\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u0456\u043B\\\u041F\u043E\u043B\u0456\u0442\u0435\u0445\\Visual KPZ\\lab3\\task5\\Program.cs*",
               "RelativeToolTip": "task5\\Program.cs*",
-              "ViewState": "AgIAAH4AAAAAAAAAAAAmwJQAAAALAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAI8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-19T10:06:39.943Z",
               "EditorCaption": ""
@@ -105,8 +103,7 @@
               "RelativeToolTip": "task4\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAF8AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-19T09:58:36.07Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-19T09:58:36.07Z"
             },
             {
               "$type": "Document",
@@ -142,8 +139,11 @@
               "RelativeToolTip": "task1\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-19T09:49:35.637Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-19T09:49:35.637Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
             }
           ]
         }
