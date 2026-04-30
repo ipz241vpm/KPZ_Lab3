@@ -5,6 +5,7 @@ using System.Collections.Generic;
 
 abstract class LightNode
 {
+    public abstract void Accept(IVisitor visitor);
     public LightNode()
     {
         OnCreated(); // викликається при створенні
@@ -39,6 +40,10 @@ class LightTextNode : LightNode
     {
         return text;
     }
+    public override void Accept(IVisitor visitor)
+    {
+        visitor.VisitText(this);
+    }
 }
 
 // ELEMENT NODE
@@ -70,6 +75,16 @@ class LightElementNode : LightNode
         }
     }
 
+    //Для візітор
+    public override void Accept(IVisitor visitor)
+    {
+        visitor.VisitElement(this);
+
+        foreach (var child in children)
+        {
+            child.Accept(visitor);
+        }
+    }
 
     private string tagName;
     private bool isSelfClosing;
@@ -206,7 +221,27 @@ class LogHoverCommand : ICommand
         Console.WriteLine("Дія: Мишка наведена на елемент.");
     }
 }
+//visitor
+interface IVisitor
+{
+    void VisitText(LightTextNode textNode);
+    void VisitElement(LightElementNode elementNode);
+}
 
+class CountVisitor : IVisitor
+{
+    public int Count = 0;
+
+    public void VisitText(LightTextNode textNode)
+    {
+        Count++;
+    }
+
+    public void VisitElement(LightElementNode elementNode)
+    {
+        Count++;
+    }
+}
 
 // MAIN
 
@@ -257,5 +292,12 @@ class Program
         Console.WriteLine("\n=== TESTING COMMANDS ===");
         li1.TriggerEvent("click");
         li2.TriggerEvent("mouseover");
+
+        Console.WriteLine("\n=== VISITOR ===");
+
+        var visitor = new CountVisitor();
+        ul.Accept(visitor);
+
+        Console.WriteLine("Total nodes: " + visitor.Count);
     }
 }
