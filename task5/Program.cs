@@ -1,14 +1,26 @@
 ﻿using System;
 using System.Collections.Generic;
 
+// TEMPLATE METHOD (життєвий цикл елементів)
 
 abstract class LightNode
 {
+    public LightNode()
+    {
+        OnCreated(); // викликається при створенні
+    }
+
+    // lifecycle hooks
+    protected virtual void OnCreated() { }
+    public virtual void OnInserted() { }
+    protected virtual void OnRendered() { }
+
     public abstract string OuterHTML();
     public abstract string InnerHTML();
 }
 
-// ТЕКСТ 
+// TEXT NODE
+
 class LightTextNode : LightNode
 {
     private string text;
@@ -29,43 +41,40 @@ class LightTextNode : LightNode
     }
 }
 
-// ЕЛЕМЕНТ 
+// ELEMENT NODE
+
 class LightElementNode : LightNode
 {
     private string tagName;
-    private bool isBlock;
     private bool isSelfClosing;
 
     private List<string> classes = new List<string>();
     private List<LightNode> children = new List<LightNode>();
-    private Dictionary<string, List<Action>> eventListeners = new Dictionary<string, List<Action>>();
-    public void AddEventListener(string eventType, Action listener)
-    {
-        if (!eventListeners.ContainsKey(eventType))
-        {
-            eventListeners[eventType] = new List<Action>();
-        }
 
-        eventListeners[eventType].Add(listener);
-    }
-    public void TriggerEvent(string eventType)
-    {
-        Console.WriteLine($"[EVENT] {tagName} -> {eventType}");
-
-        if (eventListeners.ContainsKey(eventType))
-        {
-            foreach (var listener in eventListeners[eventType])
-            {
-                listener();
-            }
-        }
-    }
-    public LightElementNode(string tagName, bool isBlock, bool isSelfClosing)
+    public LightElementNode(string tagName, bool isSelfClosing)
     {
         this.tagName = tagName;
-        this.isBlock = isBlock;
         this.isSelfClosing = isSelfClosing;
     }
+
+    // TEMPLATE METHOD hooks (реалізація)
+
+    protected override void OnCreated()
+    {
+        Console.WriteLine($"[LIFECYCLE] <{tagName}> created");
+    }
+
+    public override void OnInserted()
+    {
+        Console.WriteLine($"[LIFECYCLE] <{tagName}> inserted");
+    }
+
+    protected override void OnRendered()
+    {
+        Console.WriteLine($"[LIFECYCLE] <{tagName}> rendered");
+    }
+
+    // BASIC METHODS
 
     public void AddClass(string className)
     {
@@ -75,11 +84,7 @@ class LightElementNode : LightNode
     public void AddChild(LightNode node)
     {
         children.Add(node);
-    }
-
-    public int ChildrenCount()
-    {
-        return children.Count;
+        node.OnInserted(); // виклик lifecycle
     }
 
     public override string InnerHTML()
@@ -96,6 +101,8 @@ class LightElementNode : LightNode
 
     public override string OuterHTML()
     {
+        OnRendered(); // lifecycle
+
         string classAttr = classes.Count > 0
             ? $" class=\"{string.Join(" ", classes)}\""
             : "";
@@ -109,46 +116,29 @@ class LightElementNode : LightNode
     }
 }
 
+// MAIN
+
 class Program
 {
     static void Main()
     {
-        LightElementNode ul = new LightElementNode("ul", true, false);
+        var ul = new LightElementNode("ul", false);
         ul.AddClass("menu");
 
-        LightElementNode li1 = new LightElementNode("li", true, false);
+        var li1 = new LightElementNode("li", false);
         li1.AddChild(new LightTextNode("Item 1"));
 
-        LightElementNode li2 = new LightElementNode("li", true, false);
+        var li2 = new LightElementNode("li", false);
         li2.AddChild(new LightTextNode("Item 2"));
 
-        LightElementNode li3 = new LightElementNode("li", true, false);
+        var li3 = new LightElementNode("li", false);
         li3.AddChild(new LightTextNode("Item 3"));
 
         ul.AddChild(li1);
         ul.AddChild(li2);
         ul.AddChild(li3);
 
-        Console.WriteLine("OuterHTML:");
+        Console.WriteLine("\n=== HTML ===");
         Console.WriteLine(ul.OuterHTML());
-
-        Console.WriteLine("\nInnerHTML:");
-        Console.WriteLine(ul.InnerHTML());
-
-        Console.WriteLine("\nChildren count: " + ul.ChildrenCount());
-        Console.WriteLine("\n=== EVENTS ===");
-        // підписка
-        li1.AddEventListener("click", () =>
-        {
-            Console.WriteLine("Item 1 clicked!");
-        });
-
-        li2.AddEventListener("mouseover", () =>
-        {
-            Console.WriteLine("Item 2 hovered!");
-        });
-        // виклик
-        li1.TriggerEvent("click");
-        li2.TriggerEvent("mouseover");
     }
 }
