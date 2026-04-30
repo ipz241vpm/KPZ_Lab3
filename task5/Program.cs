@@ -45,6 +45,32 @@ class LightTextNode : LightNode
 
 class LightElementNode : LightNode
 {
+    //Команд
+
+    // Словник для зберігання команд: назва події -> список команд
+    private Dictionary<string, List<ICommand>> eventListeners = new Dictionary<string, List<ICommand>>();
+    // Метод для реєстрації команди
+    public void AddEventListener(string eventType, ICommand command)
+    {
+        if (!eventListeners.ContainsKey(eventType))
+            eventListeners[eventType] = new List<ICommand>();
+
+        eventListeners[eventType].Add(command);
+    }
+    // Метод для імітації виклику події
+    public void TriggerEvent(string eventType)
+    {
+        Console.WriteLine($"[EVENT] Подія '{eventType}' на тегу <{tagName}>");
+        if (eventListeners.ContainsKey(eventType))
+        {
+            foreach (var command in eventListeners[eventType])
+            {
+                command.Execute(); 
+            }
+        }
+    }
+
+
     private string tagName;
     private bool isSelfClosing;
 
@@ -160,6 +186,28 @@ class DepthFirstIterator : ILightIterator
     }
 }
 
+//Команд
+public interface ICommand
+{
+    void Execute(); 
+}
+class ClickCommand : ICommand
+{
+    public void Execute()
+    {
+        Console.WriteLine("Дія: Елемент було натиснуто! (Логіка команди)");
+    }
+}
+
+class LogHoverCommand : ICommand
+{
+    public void Execute()
+    {
+        Console.WriteLine("Дія: Мишка наведена на елемент.");
+    }
+}
+
+
 // MAIN
 
 class Program
@@ -195,5 +243,19 @@ class Program
             var node = iterator.Next();
             Console.WriteLine(node.OuterHTML());
         }
+
+
+        // 1. Створюємо об'єкти команд
+        var clickAction = new ClickCommand();
+        var hoverAction = new LogHoverCommand();
+
+        // 2. Підписуємо елементи на події
+        li1.AddEventListener("click", clickAction);
+        li2.AddEventListener("mouseover", hoverAction);
+
+        // 3. Імітуємо події (ніби користувач клацнув у браузері)
+        Console.WriteLine("\n=== TESTING COMMANDS ===");
+        li1.TriggerEvent("click");
+        li2.TriggerEvent("mouseover");
     }
 }
